@@ -1,0 +1,20 @@
+CREATE TABLE users (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255),
+    password VARCHAR(255),
+    balance DECIMAL(10, 2),
+    phone_number VARCHAR(255)
+);
+
+CREATE TABLE sims (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    sim_id VARCHAR(255),
+    sim_name VARCHAR(255)
+);
+
+CREATE TABLE transactions (
+    id INT PRIMARY KEY AUTO_INCREMENT,
+    username VARCHAR(255),
+    recipient_number VARCHAR(255),
+    amount DECIMAL(10, 2)
+);
